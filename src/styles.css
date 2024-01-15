@@ -10,11 +10,18 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+.centered-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .card {
   width: 285px;
-  margin: 150px auto;
   padding: 10px;
   border-radius: 15px;
+  background-color: var(--secondary-color);
 }
 
 .para-1 {
@@ -30,13 +37,13 @@ body {
 }
 
 @media (max-width: 375px) {
-  body {
+  .container-fluid {
     min-width: 375px;
   }
 }
 
-@media (min-width: 768px) {
-  body {
-    max-width: 1440px;
+@media (min-width: 1440px) {
+  .container-fluid {
+    max-width: 10000px;
   }
 }
